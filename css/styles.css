@@ -1,0 +1,44 @@
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(0, 0%, 50%);
+  background: #fff url("../images/bg-intro.svg") no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+
+ul.social-icons  {
+  list-style-type: none;
+}
+
+.banner-text {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: hsl(243, 87%, 12%);
+}
+
+.icon {
+  fill: #fff;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.logo {
+  color: #fff;
+}
