@@ -7,21 +7,22 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: hsl(0, 0%, 50%);
   background: #fff url("../images/bg-intro.svg") no-repeat;
+  background-size: 100%;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.social-icons {
-  display: flex;
+  padding: 2% 5%;
 }
 
 
-ul.social-icons  {
+.social ul  {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .banner-text {
@@ -34,11 +35,12 @@ ul.social-icons  {
 
 .icon {
   fill: #fff;
+  padding: 5px;
 }
 
 .icon svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 .logo {
@@ -55,15 +57,37 @@ ul.social-icons  {
 }
 
 .tag-line {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+label {
+  color: hsl(243, 87%, 12%);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#email {
+  border: 1px solid #ccc;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   width: 100%;
+   -webkit-box-shadow:0 0 3px #ccc;
+   -moz-box-shadow:0 0 3px #ccc;
+   box-shadow:0 0 3px #ccc;
+   height: 30px;
 }
 
 .submit {
   background-color: hsl(163, 95%, 43%);
   color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   padding: 10px 25px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+}
+
+.privacy  {
+  text-align: right;
 }
