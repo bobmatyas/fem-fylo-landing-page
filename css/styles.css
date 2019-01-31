@@ -1,7 +1,7 @@
 
 html {
   font-size: 10px;
-  height: 100vw;
+  background-color: #fff;
 }
 
 * {
@@ -13,6 +13,9 @@ body {
   color: hsl(0, 0%, 50%);
   padding: 0;
   margin: 0;
+  height: 100vh;
+  background: #fff url("../images/bg-intro.svg") no-repeat;
+  background-size: 100% 75%;
 }
 
 .header {
@@ -38,8 +41,9 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   color: hsl(243, 87%, 12%);
-  font-size: 2.8rem;
-  line-height: 29px;
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+  margin-top: 50px;
 } 
 
 .icon {
@@ -56,12 +60,11 @@ body {
 .illustration {
   padding: 100px 0;
   text-align: center;
-  background: #fff url("../images/bg-intro.svg") no-repeat;
-  background-size: 100%;
+
 }
 
 .call-out {
-  padding: 5% 8%;
+  padding: 5% ;
   margin-top: 35px;
 }
 
@@ -75,6 +78,15 @@ label {
   font-weight: 600;
 }
 
+.email-signup-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-button {
+  padding: 15px 0 0 0;
+}
+
 #email {
   border: 1px solid #ccc;
    -webkit-border-radius:2px;
@@ -84,27 +96,62 @@ label {
    -webkit-box-shadow:0 0 3px #ccc;
    -moz-box-shadow:0 0 3px #ccc;
    box-shadow:0 0 3px #ccc;
-   height: 30px;
+  height: 44px;
+  padding: 5px 10px;
+  color: #666;
 }
 
 .submit {
   background-color: hsl(163, 95%, 43%);
   color: #fff;
-  border-radius: 3px;
-  border: none;
-  padding: 10px 25px;
+  border: 1px solid hsl(163, 95%, 43%);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+
+  -webkit-box-shadow:0 0 3px #ccc;
+  -moz-box-shadow:0 0 3px #ccc;
+  box-shadow:0 0 3px #ccc;
+  padding: 10px 30px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .privacy  {
   text-align: right;
+  padding-top: 50px;
 }
+
+.privacy > a {
+  color: #00002e;
+}
+
+.signup-form {
+  margin-top: 25px;
+}
+
+#fylo-logo {
+  fill: white;
+}
+
 
 @media screen and (min-width: 768px) {
   
+  body {
+    background: #fff url("../images/bg-intro.svg") no-repeat;
+    background-size: 50% 200%;
+  }
+
+  .header {
+    width: 50%;
+    padding: 2% 5% 0 5%;
+  }
+
   .inner {
     display: flex;
+    height: 100%;
+    align-items: center;
   }
 
   main {
@@ -114,8 +161,6 @@ label {
 
   .illustration {
     width: 50%;
-    background: #fff url("../images/bg-intro.svg") no-repeat;
-    background-size: 100%;
   }
 
   .call-out {
@@ -128,9 +173,32 @@ label {
     fill: #000;
     padding: 5px;
   }
+
+  .banner-text {
+    margin-top: 125px;
+  }
+
   
-  header {
-    background-color: #fff;
+  .email-signup-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .email-input {
+    width: 75%;
+  }
+
+  .submit {
+    margin-left: 25px;
+  }
+  .email-button {
+    padding: 0 0 15px;
+  }
+
+  #fylo-logo {
+    fill: black;
   }
 
 }

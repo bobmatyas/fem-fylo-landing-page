@@ -17,23 +17,11 @@
 
 	<body>
 
-      <div class="header">
+      <nav class="header">
         <div class="logo">
-          <h1>
-          <style>
-              @media screen and (max-width: 768px) {
-                  #fylo-logo {
-                    fill: white;
-                  }
-              }
-              
-              #fylo-logo {
-                    fill: black;
-              }
-             
-          </style>
 
-            <svg width="120" height="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <svg  id="fyo-logo" width="120" height="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <path id="a" d="M.01.021h67.924V34.93H.01z"/>
               </defs>
@@ -47,7 +35,6 @@
                 </g>
               </g>
             </svg>
-            </h1>
         </div>
         
         <div class="social">
@@ -57,12 +44,12 @@
             <li class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/></svg></li>
           </ul>
         </div>
-      </div>
+      </nav>
 
     <main class="inner">
 
         <div class="illustration">
-          <img src="images/illustration-main.svg" alt="illustration" width="290" height="auto">
+          <img src="images/illustration-main.svg" alt="illustration" width="290">
         </div>
         
         <div class="call-out">
@@ -71,13 +58,23 @@
 
           <p class="tag-line">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family and co-workers.</p>
 
+            <div class="signup-form">
+              <form>
+          
+                <p><label for="email">Sign up for early access</label></p>
       
-          <p><label for="email">Sign up for early access</label></p>
-      
-          <p><input type="email" id="email"></p>
-          <p><input type="submit" value="Sign Up" class="submit"></p>
-    
-          <p class="privacy"><a href="">Privacy Policy</a></p>
+                <div class="email-signup-container">
+                  <div class="email-input">
+                    <input type="email" id="email">
+                  </div>
+                  <div class="email-button">
+                    <input type="submit" value="Sign Up" class="submit">
+                  </div>  
+                </div>
+              </form>
+            
+            </div>
+            <p class="privacy"><a href="#">Privacy Policy</a></p>
         </div>      
     </main>
 	</body>
